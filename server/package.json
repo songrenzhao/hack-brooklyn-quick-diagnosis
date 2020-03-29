@@ -1,0 +1,21 @@
+{
+  "name": "quick-diagnosis",
+  "version": "1.0.0",
+  "description": "This is a hackathon project created by Songren Zhao and Zhiwei Huang\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D()\u001b[DChris) Huang",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Songren Zhao, Zhiwei",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
