@@ -1,5 +1,14 @@
 {
   "dependencies": {
+<<<<<<< HEAD
+    "@mdi/font": "^3.6.95",
+    "roboto-fontface": "*",
+    "vuetify": "^2.2.19"
+  },
+  "devDependencies": {
+    "vue-cli-plugin-vuetify": "~2.0.5"
+=======
     "axios": "^0.19.2"
+>>>>>>> fe94a0b89644ced4ba27f583eac05305c6b2e1f4
   }
 }
