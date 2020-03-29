@@ -12,7 +12,7 @@ export default function create() {
   app.use(compression());
   app.use(bodyParser.json());
   app.use(jsend.middleware);
-  app.use('/healthcheck', healthCheck);
-  app.use('/symptom', searchSymptoms);
+  app.use('/api/healthcheck', healthCheck);
+  app.use('/api/symptom', searchSymptoms);
   return app;
 }
