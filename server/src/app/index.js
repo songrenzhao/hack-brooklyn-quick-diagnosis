@@ -13,6 +13,6 @@ export default function create() {
   app.use(bodyParser.json());
   app.use(jsend.middleware);
   app.use('/healthcheck', healthCheck);
-  app.use('/searchsymptom', searchSymptoms);
+  app.use('/symptom', searchSymptoms);
   return app;
 }

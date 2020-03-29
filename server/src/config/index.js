@@ -4,6 +4,9 @@ dotenv.config();
 
 export default {
   port: process.env.PORT,
-  infermedica_appid: process.env.INFERMEDICA_APPID,
-  infermedica_appkey: process.env.INFERMEDICA_APPKEY,
+  infermedica_headers: {
+    'App-Id': process.env.INFERMEDICA_APPID,
+    'App-Key': process.env.INFERMEDICA_APPKEY,
+    'Content-Type': 'application/json',
+  },
 };
