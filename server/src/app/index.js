@@ -4,7 +4,7 @@ import bodyParser from 'body-parser';
 import compression from 'compression';
 import jsend from 'jsend';
 import healthCheck from './healthCheck';
-import searchSymptoms from './searchSymptoms';
+import symptom from './symptom';
 
 export default function create() {
   const app = express();
@@ -13,6 +13,6 @@ export default function create() {
   app.use(bodyParser.json());
   app.use(jsend.middleware);
   app.use('/api/healthcheck', healthCheck);
-  app.use('/api/symptom', searchSymptoms);
+  app.use('/api/symptom', symptom);
   return app;
 }

@@ -89,3 +89,22 @@ export async function diagnosisSymptom(payload) {
     throw err;
   }
 }
+
+export async function triageSymptom(payload) {
+  try {
+    const { age, sex, evidence } = payload;
+    const data = await serviceRequest({
+      method: 'POST',
+      url: 'https://api.infermedica.com/v2/triage',
+      headers: config.infermedica_headers,
+      data: {
+        sex,
+        age: parseInt(age, 10),
+        evidence,
+      },
+    });
+    return data;
+  } catch (err) {
+    throw err;
+  }
+}
